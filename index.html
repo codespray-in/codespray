@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>CodeSpray - The Best Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <style>
+    body {
+      opacity: 0;
+      transition: opacity 3s ease;
+    }
+  </style>
+</head>
+
+<body onload="document.body.style.opacity='1';frameLooper()">
+
+  <header class="sticky-top navigation">
+    <div class=container>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class=navbar-brand href="index.html" style="color:red"><b>CodeSpray</b></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+          <i class="ti-align-right h4 text-dark"></i></button>
+        <div class="collapse navbar-collapse text-center" id=navigation>
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link scroll-link" href="#secondSection">Browse</a></li>
+          </ul>
+          <a href="#fourthSection" class="btn btn-sm btn-primary ml-lg-4 scroll-link">contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- banner -->
+  <section class="section pb-0" id="homeSection" style="margin-bottom: 20px;">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-7 text-center text-lg-left">
+          <h1 class="mb-4">Your Learning Ground</h1>
+          <p class="mb-4"><b style="color: #FF0043;">A Computer Science Portal</b><br /><b id="typeText"></b></p>
+          <a class="btn btn-primary scroll-link" href="#secondSection" style="color:white">Get Started</a>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal"
+            style="margin-left: 21px;">Search</button>
+        </div>
+        <div class="col-lg-4 d-lg-block d-none">
+          <img src="images/banner.jpg" alt="illustration" class="img-fluid">
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Looking for something else?</h4>
+            </div>
+            <div class="modal-body" style="color:red !important">
+              <form class="search-wrapper">
+                <input id="browseInput" class="form-control form-control" placeholder="Search Here"
+                  onkeyup="browseFunction()">
+              </form><br />
+              <ul id="myUL">
+                <li><a href="#">How to create a website using HTML and CSS?</a></li>
+                <li><a href="#">How to install JDK?</a></li>
+              </ul>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- /banner -->
+
+  <!-- topics -->
+  <section class="section pb-0" id="secondSection">
+    <div class="container"><br />
+      <h2 class="section-title">Browse Your Topic</h2>
+      <div class="row">
+        <!-- topic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card match-height">
+            <div class="card-body">
+              <i class="card-icon ti-unlock mb-4"></i>
+              <h3 class="card-title h5">Ethical Hacking</h3>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- topic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card match-height">
+            <div class="card-body">
+              <i class="card-icon ti-linux mb-4"></i>
+              <h3 class="card-title h5">Shell Scripting</h3>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- topic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card match-height">
+            <div class="card-body">
+              <i class="card-icon ti-package mb-4"></i>
+              <h3 class="card-title h5">Python</h3>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- topic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card match-height">
+            <div class="card-body">
+              <i class="card-icon ti-server mb-4"></i>
+              <h3 class="card-title h5">Oracle Database</h3>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- topic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card match-height">
+            <div class="card-body">
+              <i class="card-icon ti-stack-overflow mb-4"></i>
+              <h3 class="card-title h5">Data Structures</h3>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- topic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card match-height">
+            <div class="card-body">
+              <i class="card-icon ti-loop mb-4"></i>
+              <h3 class="card-title h5">Algorithms</h3>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- topic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card match-height">
+            <div class="card-body">
+              <i class="card-icon ti-image mb-4"></i>
+              <h3 class="card-title h5">Data Science</h3>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- topic -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card match-height">
+            <div class="card-body">
+              <i class="card-icon ti-files mb-4"></i>
+              <h3 class="card-title h5">Java</h3>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /topics -->
+
+  <!-- call to action -->
+  <section class="section" id="fourthSection">
+    <div class="container">
+      <div class="row align-items-center" style="padding-top: 20px;">
+        <div class="col-lg-4 text-center d-lg-block d-none">
+          <img src="images/team.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 text-lg-left text-center">
+          <a href="#" class="btn btn-primary">Submit a ticket</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /call to action -->
+
+  <footer>
+    <div class="container">
+      <div class="row align-items-center border-bottom py-5">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        </div>
+        <div class="col-lg-4">
+          <ul class="list-inline social-icons text-lg-right text-center">
+            <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-github"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="ti-angle-double-up"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="py-4 text-center">
+        <small class="text-light">Copyright © 2024</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- plugins -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/masonry/masonry.min.js"></script>
+  <script src="plugins/clipboard/clipboard.min.js"></script>
+  <script src="plugins/match-height/jquery.matchHeight-min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+  <script src="js/message.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/url.js"></script>
+</body>
+
+</html>
